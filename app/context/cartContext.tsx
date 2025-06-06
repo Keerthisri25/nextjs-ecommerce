@@ -36,7 +36,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const getItemTotal = (id:number) => {
     const item = cart.find(item => item.id === id)
-    // return item.quantity>1 && item.price * item.quantity
+    
     return (
       item? item.price * item.quantity: 0
     )

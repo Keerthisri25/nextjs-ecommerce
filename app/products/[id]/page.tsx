@@ -9,7 +9,7 @@ type Props = {
 
 export default async function ProductPage({ params }: Props) {
   try {
-    const {id} = params
+    const {id} = await params
     console.log("id-------", id);
     const res = await fetch(`https://fakestoreapi.com/products/${id}`);
 
