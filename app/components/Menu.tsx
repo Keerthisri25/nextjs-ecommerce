@@ -53,7 +53,7 @@ function Menu(){
                         <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.39l2.56 9.59a3.75 3.75 0 0 0-2.81 3.62.75.75 0 0 0 .75.75h15.75a.75.75 0 0 0 0-1.5H5.38a2.25 2.25 0 0 1 2.12-1.5h11.22a.75.75 0 0 0 .67-.42 60.36 60.36 0 0 0 2.96-7.23.75.75 0 0 0-.52-.96A60.86 60.86 0 0 0 5.68 4.51l-.23-.87A1.88 1.88 0 0 0 3.64 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm12.75 0a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
                     </svg>
                     <span className="relative right-6 bottom-1 text-sm text-black font-sans">{cart.reduce((total, item) => total + item.quantity, 0)}</span>
-                    <Link href="/carts" className="text-gray-900 hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500">Cart</Link>
+                    <Link href="/cart" className="text-gray-900 hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500">Cart</Link>
                     </li>
                 </ul>
                 </div>
@@ -86,7 +86,7 @@ function Menu(){
                         </Link>
                     </li>
                     <li className="flex items-center space-x-2">
-                        <Link href="/carts" className="hover:text-blue-700 dark:hover:text-blue-400">Cart</Link>
+                        <Link href="/cart" className="hover:text-blue-700 dark:hover:text-blue-400">Cart</Link>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-8 h-8" viewBox="0 0 24 24">
                         <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.39l2.56 9.59a3.75 3.75 0 0 0-2.81 3.62.75.75 0 0 0 .75.75h15.75a.75.75 0 0 0 0-1.5H5.38a2.25 2.25 0 0 1 2.12-1.5h11.22a.75.75 0 0 0 .67-.42 60.36 60.36 0 0 0 2.96-7.23.75.75 0 0 0-.52-.96A60.86 60.86 0 0 0 5.68 4.51l-.23-.87A1.88 1.88 0 0 0 3.64 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm12.75 0a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
                         </svg>
